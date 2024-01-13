@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="margin: 0">
+    <form id="popUp" onsubmit="handleEditSubmit(event)">
+        <label for="amount">Enter ExpenseAmount:</label>
+        <input type="text" name="amount" id="amount" />
+        <br>
+
+        <label for="descrip">Description:</label>
+        <input type="text" name="descrip" id="descrip" />
+<br>
+        <label for="expensesCategory">Choose a Category:</label>
+        <select id="expensesCategory" name="expensesCategory">
+            <option value="food" selected>Food</option>
+            <option value="utilities">Utilities</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="transportation">Transportation</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="amount">Enter ExpenseAmount:</label>
+        <input type="text" name="amount" id="amount" />
+
+        <label for="descrip">Description:</label>
+        <input type="text" name="descrip" id="descrip" />
+
+        <label for="expensesCategory">Choose a Category:</label>
+        <select id="expensesCategory" name="expensesCategory">
+            <option value="food" selected>Food</option>
+            <option value="utilities">Utilities</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="transportation">Transportation</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <ul id="expenseList"></ul>
+    <!-- Add Unordered List Element Here -->
+
+</body>
+<script src="script.js"></script>
+
+</html>

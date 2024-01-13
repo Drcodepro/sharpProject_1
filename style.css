@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form{
+    margin:10px ;
+  }
+  label{
+    font-weight: 600;
+  }
+
+  #popUp{
+    height: 200px;
+    width: 250px;
+    position: absolute; 
+    background-color: aquamarine;
+    margin-top: 40%;
+    padding: 10px;
+    display:none;
+  }
